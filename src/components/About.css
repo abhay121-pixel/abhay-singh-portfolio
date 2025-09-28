@@ -1,0 +1,208 @@
+.about {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #4cc9f0;
+  margin: 0.75rem auto;
+  border-radius: 2px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.about-bio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.about-bio-title,
+.about-education-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.about-image-container {
+  flex-shrink: 0;
+}
+
+.about-image-placeholder {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 3px solid #4cc9f0;
+  box-shadow: 0 4px 10px rgba(76, 201, 240, 0.2);
+}
+
+.about-image-fallback {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4cc9f0 0%, #4361ee 100%);
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #4cc9f0;
+  box-shadow: 0 4px 10px rgba(76, 201, 240, 0.2);
+}
+
+.about-initials {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.about-bio-text {
+  color: #e6e6e6;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.about-education-title {
+  margin-bottom: 1.5rem;
+}
+
+.about-education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-education-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.75rem;
+  border-radius: 15px;
+  border: 1px solid rgba(76, 201, 240, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.about-education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(76, 201, 240, 0.2);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.about-education-institution {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4cc9f0;
+  margin-bottom: 0.25rem;
+}
+
+.about-education-degree {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4361ee;
+  margin-bottom: 0.25rem;
+}
+
+.about-education-period {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .about-content {
+    gap: 2rem;
+  }
+  
+  .about-image-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .about-initials {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-bio-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .about-image-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .about-bio-title,
+  .about-education-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 2rem 0.75rem;
+  }
+  
+  .about-title {
+    font-size: 1.75rem;
+  }
+  
+  .about-image-placeholder {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .about-initials {
+    font-size: 1.5rem;
+  }
+  
+  .about-education-card {
+    padding: 1.25rem;
+  }
+}

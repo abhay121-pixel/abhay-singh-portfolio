@@ -1,0 +1,28 @@
+.page {
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Light sky color scheme */
+.page {
+  background: linear-gradient(135deg, #e0f7fa 0%, #f5f7fa 100%);
+}
+
+/* Remove background gradient from contact page since it's handled in Contact.css */
+.page:has(.contact) {
+  background: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+}

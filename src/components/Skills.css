@@ -1,0 +1,135 @@
+.skills {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.skills-subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #a0a0a0;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skills-category {
+  background: rgba(15, 52, 96, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(76, 201, 240, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(76, 201, 240, 0.1);
+  background: rgba(15, 52, 96, 0.7);
+  border-color: rgba(76, 201, 240, 0.4);
+}
+
+.skills-category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #4cc9f0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skills-category-icon {
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-item {
+  background: rgba(67, 97, 238, 0.2);
+  color: #e6e6e6;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(67, 97, 238, 0.3);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  background: rgba(67, 97, 238, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(67, 97, 238, 0.2);
+  border-color: rgba(67, 97, 238, 0.5);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .skills {
+    padding: 3rem 1rem;
+  }
+  
+  .skills-title {
+    font-size: 2rem;
+  }
+  
+  .skills-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .skills-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .skills-category {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 2rem 0.75rem;
+  }
+  
+  .skills-title {
+    font-size: 1.75rem;
+  }
+  
+  .skills-category-title {
+    font-size: 1.3rem;
+  }
+  
+  .skill-item {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
