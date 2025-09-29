@@ -45,12 +45,6 @@ const portfolioData = {
       description: "Teaching machine learning concepts and practical applications to students."
     },
     {
-      role: "Project Mentor",
-      company: "IIT Madras",
-      period: "2024–2025",
-      description: "Guiding students in their academic projects and providing technical mentorship."
-    },
-    {
       role: "Mathematics Teacher",
       company: "Vedantu",
       period: "2020–2022",
@@ -92,6 +86,13 @@ const portfolioData = {
       year: "2022",
       technologies: "Flask + data visualization",
       description: "Interactive dashboard for sales analytics with real-time data visualization and reporting capabilities."
+    },
+    {
+      name: "Personal Portfolio Website",
+      year: "2025",
+      technologies: "React + Flask",
+      description: "A full-stack portfolio website showcasing my skills, projects, and experience as a Data Scientist and Full-Stack Developer.",
+      github: "https://github.com/abhay121-pixel/abhay-singh-portfolio.git"
     }
   ],
 
@@ -99,6 +100,7 @@ const portfolioData = {
     email: "abhaysingh80446@gmail.com",
     phone: "+91 7052640185",
     linkedin: "https://www.linkedin.com/in/abhay-singh-0b5b26151/",
+    github: "https://github.com/abhay121-pixel",
     resume: "https://drive.google.com/file/d/13PXRkPiTmWtw8EcgZxl9OInHbpAjmtJP/view?usp=drive_link"
   }
 };
